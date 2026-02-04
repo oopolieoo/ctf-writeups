@@ -1,6 +1,6 @@
 ## Challenge Overview
 
-This challenge provided me with a .jpg image and a hint that something is contained within the file. The goal was to extract the flag from a .jpg file.
+This challenge provided me with a .jpg image and a hint that something is contained within the file. The goal was to extract the flag from a .jpg file. This CTF has a difficulty rating of easy.
 
 ## Initial Analysis
 
