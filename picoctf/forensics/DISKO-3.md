@@ -7,7 +7,7 @@ After I downloaded the file, the first thing I did was unzip the folder in order
 
 
 ## Enumeration
-Upon uploading the file into Autopsy, there was instant feedback in several categories. The first thing I did was look for any deleted files that may contain an artifact linked to the flag. There were two deleted files; one was a `.txt` file which appeared to contain logs from a kali terminal, while the other was a GZIP Compressed Archive. Upon openeing the GZIP file, the hex in some of the metadata actually translated to "flag." This was a clear indicator to me that the solution is likely here. I considered manually decompressing it in a VM using `gunzip`, but I believed that the file was hidden within the Autopsy findings. 
+Upon uploading the file into Autopsy, there was instant feedback in several categories. The first thing I did was look for any deleted files that may contain an artifact linked to the flag. There were two deleted files; one was a `.txt` file which appeared to contain logs from a kali terminal, while the other was a GZIP Compressed Archive. Upon openeing the GZIP file, the hex in some of the metadata actually translated to "flag." This was a clear indicator to me that the solution is likely here. I considered manually decompressing it in a VM using `gunzip`, but I believed that there was an easier was to find the flag through Autopsy findings. 
 
 <img width="928" height="487" alt="Screenshot 2026-02-16 134801" src="https://github.com/user-attachments/assets/a60a8add-8f38-4b74-a57b-ae7ed712a5d0" />
 
@@ -17,7 +17,7 @@ Looking further, I opened the "Data Sources" tab connected to the `.dd` file and
 
 
 
-
 ## Lessons Learned
+By completing this CTF, I learned valuable information about `.dd` files, their usecase, and how to examine them for artifacts. Additionally, by uilizing Autopsy I found out that I can reduce the number of steps needed to find hidden information within GZIP archives.
 
 
